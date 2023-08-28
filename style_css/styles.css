@@ -1,3 +1,16 @@
 body{
-    background-color: darkblue;
+    /*background-color: #130F40;*/
+    background-color: greenyellow;
+}
+#navigation_bar{
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+}
+#navigation_id{
+    position: absolute;
+    left: 980px;
+    top: 15px;
 }
