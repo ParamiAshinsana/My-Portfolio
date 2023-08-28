@@ -8,9 +8,41 @@ body{
     background-color: white;
     position: fixed;
     top: 0px;
+    z-index: 999;
 }
 #navigation_id{
     position: absolute;
     left: 980px;
     top: 15px;
+}
+
+
+#first_ui_label{
+    display: inline;
+    position: absolute;
+}
+#h1_element{
+    position: relative;
+    font-size: 35px;
+    color: cornflowerblue;
+    top: 90px;
+    left: 20px;
+}
+#h2_element{
+    position: relative;
+    font-size: 100px;
+    color: crimson;
+    top: 10px;
+    left: 100px;
+}
+#main_img{
+    display: inline;
+    left: 800px;
+    position: absolute;
+    top: 100px;
+}
+#top_social_icons{
+    display: inline;
+    position: absolute;
+    top: 600px;
 }
