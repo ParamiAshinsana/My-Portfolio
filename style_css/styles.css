@@ -69,4 +69,81 @@ body{
     top: 600px;
     z-index: 1;
     left: 10px;
+    top: 750px;
+    justify-content: space-around;
+}
+
+#image-container {
+    display: inline;
+    position: absolute;
+    z-index: 1;
+
+    width: 840px;
+    height: 100px;
+    z-index: 3;
+    top: 700px;
+    left: 20px;
+}
+
+/*!* Apply styles to the images within the container *!*/
+/*.image-container img {*/
+/*    position: relative;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border: 1px solid black;*/
+/*    top: 500px;*/
+/*}*/
+
+.gmail_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+}
+.instagram_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 130px;*/
+}
+.facebook_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 260px;*/
+    left: 156px;
+}
+.linkedin_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 390px;*/
+    left: 312px;
+}
+.twitter_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 520px;*/
+    left: 468px;
+}
+.github_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 650px;*/
+    left: 624px;
+}
+.medium_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 770px;*/
+    left: 770px;
 }
