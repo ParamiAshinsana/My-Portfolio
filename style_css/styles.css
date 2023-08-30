@@ -50,7 +50,7 @@ body{
 }
 #line_img{
     display: inline;
-    top: 300px;
+    top: 330px;
     left: 145px;
     position: relative;
     z-index: 10;
@@ -146,4 +146,12 @@ body{
     top: 20px;
     /*left: 770px;*/
     left: 770px;
+}
+#up_main_paragraph{
+    top: 420px;
+    left: 200px;
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+
 }
