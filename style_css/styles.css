@@ -1,7 +1,44 @@
 body{
     /*background-color: #130F40;*/
-    background-color: greenyellow;
+    /*background-color: greenyellow;*/
+    /*background-color: #fad902;*/
+    background-color: #fca311;
+    /*background-color: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);*/
+;
 }
+#introduction_section{
+    z-index: 100;
+}
+#about_section{
+    position: absolute;
+    top: 1000px;
+}
+#gallery_section{
+    position: absolute;
+    top: 2000px;
+}
+#skills_section{
+    position: absolute;
+    top: 3000px;
+}
+#assignment_section{
+    position: absolute;
+    top: 4000px;
+}
+#educations_section{
+    position: absolute;
+    top: 5000px;
+}
+#projects_section{
+    position: absolute;
+    top: 6000px;
+}
+#contact_section{
+    position: absolute;
+    top: 7000px;
+}
+
+
 #navigation_bar{
     width: 100vw;
     height: 50px;
@@ -24,20 +61,20 @@ body{
 #h1_element{
     position: relative;
     font-size: 35px;
-    color: cornflowerblue;
+    color: black;
     top: 90px;
     left: 20px;
 }
 #h2_element{
     position: relative;
     font-size: 100px;
-    color: crimson;
+    color: black;
     top: 10px;
     left: 100px;
 }
 #main_img{
     display: inline;
-    left: 900px;
+    left: 950px;
     position: absolute;
     top: 100px;
     border-radius: 100%;
@@ -154,4 +191,12 @@ body{
     z-index: 10;
     font-size: 22px;
 
+}
+#divide_div{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    display: inline;
+    top: 900px;
 }
