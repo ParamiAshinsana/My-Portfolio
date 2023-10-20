@@ -1,0 +1,196 @@
+#introduction_section{
+    z-index: 100;
+}
+#first_ui_label{
+    display: inline;
+    position: absolute;
+}
+#h1_element{
+    position: relative;
+    font-size: 35px;
+    color: white;
+    top: 160px;
+    left: 17vw;
+}
+#h2_element{
+    position: relative;
+    font-size: 100px;
+    color: white;
+    top: 95px;
+    left: 16vw;
+    font-weight: bold;
+    /*color: #333; !* Text color *!*/
+    /*text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); !* x-offset, y-offset, blur-radius, color *!*/
+    text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.5);
+
+}
+#main_img{
+    display: inline;
+    left: 67vw;
+    position: absolute;
+    top: 150px;
+    border-radius: 100%;
+
+}
+.rounded-image{
+    border-radius: 50px;
+    /*box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;*/
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    z-index: 1;
+}
+#line_img{
+    display: inline;
+    top: 350px;
+    left: 245px;
+    position: relative;
+    z-index: 10;
+}
+#background_white_div{
+    width: 100%;
+    height: 300px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: inline;
+    top: 500px;
+}
+#top_social_icons{
+    display: inline;
+    position: absolute;
+    top: 600px;
+    z-index: 1;
+    left: 10px;
+    top: 750px;
+    justify-content: space-around;
+}
+
+#image-container {
+    display: inline;
+    position: absolute;
+    z-index: 1;
+
+    width: 840px;
+    height: 100px;
+    z-index: 3;
+    top: 700px;
+    left: 20px;
+}
+.gmail_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+}
+.instagram_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 130px;*/
+
+}
+.facebook_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 260px;*/
+    left: 156px;
+}
+.linkedin_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 390px;*/
+    left: 312px;
+}
+.twitter_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 520px;*/
+    left: 468px;
+}
+.github_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 650px;*/
+    left: 624px;
+}
+.medium_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    /*left: 770px;*/
+    left: 760px;
+}
+#up_main_paragraph_01{
+    top: 410px;
+    left: 300px;
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+    color: white;
+}
+#up_main_paragraph_02{
+    top: 500px;
+    left: 300px;
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+}
+
+#animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+                /*#231557 0%,*/
+                /*#44107a 29%,*/
+                /*#ff1361 67%,*/
+                /*#fff800 100%*/
+
+            #fff 0%,
+            #f2cbcb 13%,
+            #b3f2f1 28% ,
+            #b3d0f2 40%,
+            #d4aff0 55%,
+            #f7d0ee 69%,
+            #706d6d 75%,
+            #706d6d 90%,
+            black 100%
+    );
+    /*background-size: auto auto;*/
+    /*background-clip: border-box;*/
+    background-size: 200% auto;
+    color: black;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    /*font-size: 190px;*/
+
+
+
+    position: relative;
+    font-size: 93px;
+    /*color: white;*/
+    top: 155px;
+    left: 3vw;
+    /*font-weight: bold;*/
+    /*color: #333; !* Text color *!*/
+    /*text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); !* x-offset, y-offset, blur-radius, color *!*/
+    text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+

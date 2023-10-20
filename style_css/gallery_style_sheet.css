@@ -1,0 +1,75 @@
+#gallery_section{
+    position: absolute;
+    top: 1750px;
+}
+#imgA{
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    border-radius: 10px;
+}
+#imgB{
+    /*position: absolute;*/
+    /*top: 850px;*/
+    /*left: 700px;*/
+    /*border-radius: 10px;*/
+
+    position: absolute;
+    top: 550px;
+    left: 570px;
+    border-radius: 10px;
+}
+#imgC{
+    position: absolute;
+    top: 150px;
+    left: 570px;
+    border-radius: 10px;
+}
+#imgH{
+    position: absolute;
+    top: 690px;
+    left: 1120px;
+    border-radius: 10px;
+}
+#imgD{
+    position: absolute;
+    top: 150px;
+    left: 1120px;
+    border-radius: 10px;
+}
+#imgE{
+    position: absolute;
+    top: 1050px;
+    left: 540px;
+    border-radius: 10px;
+}
+#imgF{
+    position: absolute;
+    top: 450px;
+    left: 540px;
+    border-radius: 10px;
+}
+#imgJ{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-radius: 10px;
+}
+/*--------------*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    /*width: 300px; !* Set the desired width for your image *!*/
+    transition: filter 0.3s;
+}
+
+.image-container img:hover {
+    filter: none; /* Remove the black and white filter on hover */
+}
+
+.image-container img:not(:hover) {
+    filter: grayscale(100%); /* Convert the image to black and white by default */
+}

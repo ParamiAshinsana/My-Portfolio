@@ -1,0 +1,10 @@
+#contact_section{
+    position: absolute;
+    top: 7000px;
+}
+#contact_wavy{
+    position: absolute;
+    /*top: 600px;*/
+    left: 30vw;
+    padding: 50px;
+}

@@ -1,0 +1,23 @@
+#navigation_bar{
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    text-decoration: none;
+
+}
+#navigation_id{
+    position: absolute;
+    left: 700px;
+    top: 15px;
+    text-decoration: none;
+}
+.navi_front{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
