@@ -517,6 +517,11 @@ body {
     }
 
 }
+
+.content-section {
+    width: 100%;
+}
+
 h3 {
     margin: auto;
     font-size: 5.5rem;
@@ -525,5 +530,9 @@ h3 {
     color: hsl(230, 100%, 95%);
     opacity: 90%;
     position: absolute;
-    left: 38vw;
+    left: 0;
+    right: 0;
+    width: max-content;
+
 }
+

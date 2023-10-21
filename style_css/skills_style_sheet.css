@@ -74,10 +74,10 @@
     top:320px;
     left: 1250px;
 }
-div:nth-child(6) {
-    position: relative;
-    top: 100px;
-}
+/*div:nth-child(6) {*/
+/*    position: relative;*/
+/*    top: 100px;*/
+/*}*/
 #about_video_01{
     position: absolute;
     top: 0;

@@ -234,14 +234,14 @@ a{
     margin-top: 0;
 }
 
-h1{
-    position: absolute;
-    z-index: 1;
-    transform: translate(-25%, -65%);
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    line-height: 1.2;
-}
+/*h1{*/
+/*    position: absolute;*/
+/*    z-index: 1;*/
+/*    transform: translate(-25%, -65%);*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    margin: 0;*/
+/*    line-height: 1.2;*/
+/*}*/
 .about_round{
     border-radius: 10px;
 }

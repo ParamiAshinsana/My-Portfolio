@@ -13,7 +13,7 @@
     font-size: 1rem;
     font-family: sans-serif;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 30px;
     color: white;
 }
 .arrow {
@@ -69,6 +69,7 @@
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 12px;
+    z-index: 100;
 }
 .card:hover {
     transform: scale(1.05);
@@ -100,7 +101,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     box-shadow: 10px 10px 20px rgba(5, 5, 5, 0.2), -10px -10px 20px rgba(5, 5, 5, 0.2); /* 3D glassy box shadow for pseudo-element */
     transition: width 0.3s ease, height 0.3s ease;
-    z-index: 0;
+    z-index: 10000000;
 
 
     display: flex;
@@ -121,6 +122,7 @@
     color: ghostwhite;
     transition: all 0.3s ease;
 }
+
 .row {
     display: flex;
 }
