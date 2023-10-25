@@ -1,7 +1,7 @@
 #assignment_section{
     /*position: absolute;*/
     /*top: 3750px;*/
-    height: 1000px;
+    height: 1500px;
     /*margin-left: 100px;*/
 }
 /*-----------*/
@@ -59,7 +59,7 @@
     position: relative;
     overflow: hidden;
     width: 400px; /* 4 columns */
-    height: 150px;
+    height: 250px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)); /* Glassy gradient background */
     display: flex;
     flex-direction: column;
@@ -72,6 +72,8 @@
     margin-top: 20px;
     border-radius: 12px;
     z-index: 100;
+
+
 }
 .card:hover {
     transform: scale(1.05);
@@ -137,7 +139,23 @@
     position: relative;
     top: 200px;
     margin-left: 100px;
-
-
-
+}
+.view_github{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: 1px solid #abaa82;
+    border-radius: 50px;
+    width: 80px;
+    height: 30px;
+    padding-left: 19px;
+    padding-top: 5px;
+}
+.view_front{
+    color: #474747;
+    text-decoration: none;
+}
+.view_front:hover{
+    color: red;
+    text-decoration: none;
 }
