@@ -1,6 +1,7 @@
 #skills_section{
-    position: absolute;
-    top: 3000px;
+    /*position: absolute;*/
+    /*top: 3000px;*/
+    height: 1000px;
 }
 #skill-paragraph{
     font-family: 'Montserrat', sans-serif;
@@ -8,6 +9,7 @@
     position: relative;
     margin: 25px;
     color: white;
+
 }
 #java_id{
     position: absolute;
@@ -39,7 +41,7 @@
     height: 500px;
     /*background-color: #fa7814;*/
     background-color: whitesmoke;
-    position: absolute;
+    position: relative;
     top:150px ;
     left: 60px;
     /*opacity:70%;*/

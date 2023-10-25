@@ -1,6 +1,7 @@
 #projects_section{
-    position: absolute;
-    top: 6000px;
+    /*position: absolute;*/
+    /*top: 6470px;*/
+    height: 800px;
 }
 /*#project_id{*/
 /*    position: absolute;*/
@@ -10,107 +11,203 @@
 
 /*-----------*/
 
-i {
-    position: relative;
-    display: block;
-    width: 650px;
-    height: 450px;
+/*i {*/
+/*    position: relative;*/
+/*    display: block;*/
+/*    width: 650px;*/
+/*    height: 450px;*/
+/*    overflow: hidden;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*i:before, i:after {*/
+/*    !*content: '⥪';*!*/
+/*    content: '<';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 1rem;*/
+/*    z-index: 2;*/
+/*    width: 2rem;*/
+/*    height: 2rem;*/
+/*    !*background: dodgerblue;*!*/
+/*    background: black;*/
+/*    color: white;*/
+/*    border-radius: 50%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    pointer-events: none;*/
+/*}*/
+
+/*i:after {*/
+/*    !*content: '⥭';*!*/
+/*    content: '>';*/
+/*    left: auto;*/
+/*    right: 1rem;*/
+/*}*/
+
+/*!* I haven't found a way for IE and Edge to let me style inputs that way *!*/
+/*input {*/
+/*    appearance: none;*/
+/*    -ms-appearance: none;*/
+/*    -webkit-appearance: none;*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    border-radius: 5px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    transform: translateX(100%);*/
+/*    transition: transform ease-in-out 400ms;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*input:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*input:after {*/
+/*    content: attr(title);*/
+/*    position: absolute;*/
+/*    top: 1rem;*/
+/*    left: 1rem;*/
+/*    background-color: rgba(0,0,0,0.4);*/
+/*    color: white;*/
+/*    padding: .5rem;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*input:not(checked):before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 2rem;*/
+/*    height: 2rem;*/
+/*    border-radius: 50%;*/
+/*    top: 50%;*/
+/*    left: calc(-100% + 1rem);*/
+/*}*/
+
+/*input:checked:before {*/
+/*    display: none;*/
+/*    left: 1rem;*/
+/*}*/
+
+/*input:checked {*/
+/*    transform: translateX(0);*/
+/*    pointer-event: none;*/
+/*    z-index: 0;*/
+/*    box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);*/
+/*}*/
+
+/*input:checked + input:before {*/
+/*    left: -3rem;*/
+/*}*/
+
+/*input:checked + input ~ input:before {*/
+/*    display: none;*/
+/*}*/
+/*#id_project{*/
+/*    box-sizing: border-box;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: sans-serif;*/
+
+
+/*    !*body*!*/
+/*    !*display: flex;*!*/
+/*    !*justify-content: center;*!*/
+/*    !*align-content: center;*!*/
+/*    position: absolute;*/
+/*    top: 100px;*/
+/*    left: 27vw;*/
+
+/*    margin-top: 100px;*/
+
+/*    !*box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),*!*/
+/*    !*1px 2px 4px 0px rgba(0,255,255,0.7),*!*/
+/*    !*2px 4px 8px 0px rgba(0,255,255,0.7),*!*/
+/*    !*2px 4px 16px 0px rgba(0,255,255,0.7);*!*/
+
+/*    !*box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.7),*!*/
+/*    !*1px 2px 4px 0px rgba(255, 255, 255, 0.7),*!*/
+/*    !*2px 4px 8px 0px rgba(255, 255, 255, 0.7),*!*/
+/*    !*2px 4px 16px 0px rgba(255, 255, 255, 0.7);*!*/
+
+/*    box-shadow: 10px 0px 95px 0px #d0d0d0;*/
+
+/*    !*box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;*!*/
+
+/*    !*box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset,*!*/
+/*    !*rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset,*!*/
+/*    !*rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset,*!*/
+/*    !*rgba(255, 255, 255, 0.06) 0px 2px 1px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 4px 2px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 8px 4px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 16px 8px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 32px 16px;*!*/
+
+/*    !*box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 4px 2px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 8px 4px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 16px 8px,*!*/
+/*    !*rgba(255, 255, 255, 0.09) 0px 32px 16px;*!*/
+/*}*/
+
+.slider-container {
+    width: 700px; /* Set the width to 700px */
+    height: 500px; /* Set the height to 500px */
+    margin: 0 auto;
     overflow: hidden;
-    border-radius: 5px;
+    position: relative;
+
+    box-shadow: 10px 0px 95px 0px #d0d0d0;
 }
 
-i:before, i:after {
-    /*content: '⥪';*/
-    content: '<';
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    z-index: 2;
-    width: 2rem;
-    height: 2rem;
-    /*background: dodgerblue;*/
-    background: black;
-    color: white;
-    border-radius: 50%;
+.slider {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
+    transition: transform 0.5s;
+    height: 100%;
 }
 
-i:after {
-    /*content: '⥭';*/
-    content: '>';
-    left: auto;
-    right: 1rem;
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
 }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
-input {
-    appearance: none;
-    -ms-appearance: none;
-    -webkit-appearance: none;
-    display: block;
+.slide img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateX(100%);
-    transition: transform ease-in-out 400ms;
-    z-index: 1;
+    object-fit: cover;
 }
 
-input:focus {
-    outline: none;
-}
-
-input:after {
-    content: attr(title);
+.arrow_1 {
+    cursor: pointer;
+    font-size: 30px;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-input:not(checked):before {
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
     top: 50%;
-    left: calc(-100% + 1rem);
+    transform: translateY(-50%); /* Center the arrow vertically */
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    z-index: 1;
+    user-select: none;
 }
 
-input:checked:before {
-    display: none;
-    left: 1rem;
+.left-arrow {
+    left: 0;
 }
 
-input:checked {
-    transform: translateX(0);
-    pointer-event: none;
-    z-index: 0;
-    box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+.right-arrow {
+    right: 0;
 }
-
-input:checked + input:before {
-    left: -3rem;
-}
-
-input:checked + input ~ input:before {
-    display: none;
-}
+/*------------------------------*/
 #id_project{
+    height: 600px;
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -121,9 +218,9 @@ input:checked + input ~ input:before {
     /*display: flex;*/
     /*justify-content: center;*/
     /*align-content: center;*/
-    position: absolute;
-    top: 100px;
-    left: 27vw;
+    position: relative;
+    top: 190px;
+    /*left: 27vw;*/
 
     margin-top: 100px;
 
@@ -137,7 +234,7 @@ input:checked + input ~ input:before {
     /*2px 4px 8px 0px rgba(255, 255, 255, 0.7),*/
     /*2px 4px 16px 0px rgba(255, 255, 255, 0.7);*/
 
-    box-shadow: 10px 0px 95px 0px #d0d0d0;
+    /*box-shadow: 10px 0px 95px 0px #d0d0d0;*/
 
     /*box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;*/
 
@@ -155,4 +252,19 @@ input:checked + input ~ input:before {
     /*rgba(255, 255, 255, 0.09) 0px 8px 4px,*/
     /*rgba(255, 255, 255, 0.09) 0px 16px 8px,*/
     /*rgba(255, 255, 255, 0.09) 0px 32px 16px;*/
+}
+.project_label{
+    /*left: 0;*/
+    /*right: 0;*/
+
+    /*margin: auto;*/
+    /*position: relative;*/
+    font-size: 50px;
+
+    position: relative;
+    top: 0;
+    left: 35%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
 }

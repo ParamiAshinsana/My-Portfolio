@@ -1,6 +1,7 @@
 #gallery_section{
-    position: absolute;
-    top: 1750px;
+    /*position: absolute;*/
+    /*top: 1750px;*/
+    height: 1400px;
 }
 #imgA{
     position: absolute;

@@ -1,6 +1,12 @@
 #contact_section{
-    position: absolute;
-    top: 7000px;
+    /*position: absolute;*/
+    /*top: 7400px;*/
+
+    box-shadow: 1px 1px 20px #706d6d,
+    1px 1px 40px #d0d0d0;
+    /*box-shadow: 1px -1px 20px #706d6d,*/
+    /*-1px 1px 20px #706d6d,*/
+    /*1px 1px 20px #706d6d;*/
 }
 #contact_wavy{
     position: absolute;

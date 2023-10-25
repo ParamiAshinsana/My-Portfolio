@@ -1,6 +1,8 @@
 #assignment_section{
-    position: absolute;
-    top: 3750px;
+    /*position: absolute;*/
+    /*top: 3750px;*/
+    height: 1000px;
+    /*margin-left: 100px;*/
 }
 /*-----------*/
 .head_h2_id{
@@ -75,6 +77,9 @@
     transform: scale(1.05);
 }
 
+
+
+/*card eka hover karama*/
 .card:before {
     /*content: '';*/
     /*position: absolute;*/
@@ -97,6 +102,8 @@
     width: 50px;
     height: 50px;
     /*background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)); !* Glassy gradient background *!*/
+
+
     background: black; /* Glassy gradient background */
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     box-shadow: 10px 10px 20px rgba(5, 5, 5, 0.2), -10px -10px 20px rgba(5, 5, 5, 0.2); /* 3D glassy box shadow for pseudo-element */
@@ -127,9 +134,10 @@
     display: flex;
 }
 #assignment_id{
-    position: absolute;
+    position: relative;
     top: 200px;
     margin-left: 100px;
+
 
 
 }
