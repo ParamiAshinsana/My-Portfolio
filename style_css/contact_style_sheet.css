@@ -7,10 +7,259 @@
     /*box-shadow: 1px -1px 20px #706d6d,*/
     /*-1px 1px 20px #706d6d,*/
     /*1px 1px 20px #706d6d;*/
+    height: 2000px;
+    padding-top: 50px;
+
 }
-#contact_wavy{
-    position: absolute;
+/*#contact_wavy{*/
+/*    position: absolute;*/
+/*    !*top: 600px;*!*/
+/*    left: 30vw;*/
+/*    padding: 50px;*/
+/*}*/
+/*------new--------*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    padding-top: 200px;
+
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: cornflowerblue;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(228,228,228);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.contact-text p{
+    color: rgb(177,177,177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list{
+    margin-bottom: 3rem;
+    border: 1px solid pink;
+    color: #454545;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #00ff00;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #00ff00;
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00ff00;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00ff00;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.contact-icons i:hover{
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+.contact-form form{
+    position: relative;
+    opacity: 80%;
+}
+.contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: white;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 50;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #00ff00;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #222222;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #00ff00 ,
+    0 0 25px #00ff00;
+
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan,
+    0 0 100px cyan , 0 0 200px cyan;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+/*wavy*/
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+}
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: ghostwhite;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+#contact_wavy {
+    position: relative;
     /*top: 600px;*/
-    left: 30vw;
+    /*left: 10vw;*/
     padding: 50px;
+    bottom: 530px;
+}
+@keyframes waviy {
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+
+
+/*social media icons*/
+#social_media_container {
+    display: inline;
+    position: absolute;
+    z-index: 1;
+
+    width: 700px;
+    height: 100px;
+    /*z-index: 3;*/
+    /*top: 550px;*/
+    left: 20px;
+    border: 5px solid blue;
+    padding-left: 20px;
+}
+.gmail_icons{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+}
+.instagram_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 130px;*/
+
+}
+.facebook_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 260px;*/
+    left: 140px;
+}
+.linkedin_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 390px;*/
+    left: 250px;
+}
+.twitter_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 520px;*/
+    left: 390px;
+}
+.github_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    /*left: 650px;*/
+    left: 520px;
+}
+.medium_icon{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    /*left: 770px;*/
+    left: 640px;
+}
+.last-text{
+    position: relative;
+}
+#contacts{
+    border: 1px solid yellow;
+    padding-bottom: 50px;
 }
