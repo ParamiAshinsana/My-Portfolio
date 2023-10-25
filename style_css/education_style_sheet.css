@@ -47,7 +47,7 @@ a{
     height:400px;
     margin:0 auto;
     /*margin-top: 5rem;*/
-
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .gloss{
@@ -72,6 +72,7 @@ a{
     transform: translateX(0);
     transform-origin: left center;
     backface-visibility: hidden;
+    opacity: 90%;
 }
 
 .description{
@@ -86,6 +87,7 @@ a{
     padding: 10% 10%;
     padding-top:5%;
     z-index:1;
+    opacity: 70%;
 }
 
 .description .edu_topic{
