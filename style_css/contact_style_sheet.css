@@ -123,9 +123,9 @@
 .contact-form form .send{
     display: inline-block;
     padding: 14px 60px;
-    background: #00ff00;
+    background: #ababab;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 22px;
     color: #222222;
     letter-spacing: 1px;
     text-decoration: none;
@@ -133,14 +133,19 @@
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #00ff00 ,
-    0 0 25px #00ff00;
+    box-shadow: 0 0 5px #c2c2c2 ,
+    0 0 25px #ded9d9;
 
 }
+/*.contact-form form .send:hover{*/
+/*    box-shadow: 0 0 5px cyan,*/
+/*    0 0 25px cyan , 0 0 50px cyan,*/
+/*    0 0 100px cyan , 0 0 200px cyan;*/
+/*}*/
 .contact-form form .send:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan , 0 0 50px cyan,
-    0 0 100px cyan , 0 0 200px cyan;
+    box-shadow: 0 0 5px #d9faf0,
+    0 0 25px #d9faf0 , 0 0 50px #d9faf0,
+    0 0 100px #d9faf0 , 0 0 200px #d9faf0;
 }
 
 @keyframes slideTop {
