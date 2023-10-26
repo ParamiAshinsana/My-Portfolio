@@ -12,11 +12,12 @@
     font-family: sans-serif;
 }
 .para_clz{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 30px;
     color: white;
+    margin-bottom: 20px;
 }
 .arrow {
     display: flex;
@@ -157,5 +158,18 @@
 }
 .view_front:hover{
     color: red;
+    text-decoration: none;
+}
+#cases_list{
+    position: absolute;
+    padding-left: 19px;
+    padding-top: 95px;
+}
+.list_front{
+    color: #cae3e6;
+    text-decoration: none;
+}
+.list_front:hover{
+    color: #58a8fc;
     text-decoration: none;
 }
