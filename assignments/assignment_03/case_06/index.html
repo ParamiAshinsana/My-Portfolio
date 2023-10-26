@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03-CASE 06</title>
+    <link rel="stylesheet" href="css/normalize.css ">
+
+    <style>
+        body>div {
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,1fr);
+
+        }
+
+        body>div>div{
+            border: 2px solid black;
+        }
+        body>div>div:first-child{
+            background-color: crimson;
+            grid-column: 1/3;
+        }
+        body>div>div:nth-child(2){
+            background-color: forestgreen;
+        }
+        body>div>div:nth-child(3){
+            background-color: lightcoral;
+            grid-row: 1/4;
+            grid-column: 4/5;
+        }
+        body>div>div:nth-child(4){
+            background-color: purple;
+        }
+        body>div>div:nth-child(5){
+            background-color: deeppink;
+        }
+        body>div>div:nth-child(6){
+            background-color: darkkhaki;
+        }
+        body>div>div:nth-child(7){
+            background-color: blue;
+
+        }
+        body>div>div:nth-child(8){
+            background-color: gold;
+            grid-column: 2/4;
+        }
+
+
+    </style>
+</head>
+<body>
+<h6 id="case_6">CASE_06</h6>
+<div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+</div>
+
+
+</body>
+</html>

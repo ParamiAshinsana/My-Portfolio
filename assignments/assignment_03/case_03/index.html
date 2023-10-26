@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03-CASE 03</title>
+    <link rel="stylesheet" href="css/normalize.css ">
+
+    <style>
+        #frame{
+            border-radius: 100%;
+            width: 200px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            aspect-ratio:1/1 ;
+            position: fixed;
+            border: 10px solid gray;
+            z-index: 999999;
+        }
+        #frame>div{
+            border-radius: 100%;
+            width: calc(100% - 20px);
+            aspect-ratio:1/1 ;
+            border: 10px solid red;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div{
+            border-radius: 100%;
+            background-color: chartreuse;
+            width: 180px;
+            aspect-ratio:1/1 ;
+            /*position: absolute;*/
+            /*margin: auto;*/
+            /*right: 0;*/
+            /*left: 0;*/
+            margin-top: 315.4px;
+            margin-bottom: 315.4px;
+            /*margin: 315.4px 0px;*/
+            position: relative;
+
+        }
+        #three{
+            position: absolute;
+            margin: auto;
+            right: 0;
+            left: 0;
+            width: fit-content;
+        }
+        section>div>span{
+            width: fit-content;
+            height: fit-content;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+            text-align: center;
+        }
+
+        section>div:first-child{
+            background-color: darkmagenta;
+        }
+        section>div:nth-child(2){
+            background-color: dodgerblue;
+        }
+        section>div:nth-child(3){
+            background-color: coral;
+        }
+
+
+    </style>
+</head>
+<body>
+<h6 id="case_3">CASE_03</h6>
+<div id="frame">
+    <div>
+
+    </div>
+
+</div>
+
+<section id="three">
+    <div>
+        <span>Hello</span>
+    </div>
+
+
+    <div>
+        <span>Welcome To</span>
+    </div>
+
+
+    <div>
+        <span>IJSE</span>
+    </div>
+
+</section>
+
+
+
+</body>
+</html>

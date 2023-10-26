@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03-CASE 01</title>
+    <link rel="stylesheet" href="css/normalize.css ">
+
+    <style>
+        #main{
+            position: relative;
+        }
+        #red_Box1{
+            background: red;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+        #green_Box2{
+            background: green;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            right: 0;
+        }
+        #yellow_Box3{
+            background: orange;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+        }
+        #pink_Box4{
+            background: deeppink;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #red_circul{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50% - 75px);
+            right: calc(50% - 75px);
+        }
+
+        #green_circul{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50% - 75px);
+            right: calc(50% - 75px);
+        }
+        #yellow_circul{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50% - 75px);
+            right: calc(50% - 75px);
+        }
+        #pink_circul{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50% - 75px);
+            right: calc(50% - 75px);
+        }
+
+        #red_sq{
+            background-color: red;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: calc(50% - 40px);
+            right: calc(50% - 40px);
+        }
+
+        #pink_sq{
+            background-color: red;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: calc(50% - 40px);
+            right: calc(50% - 40px);
+        }
+
+        #green_sq{
+            background-color: red;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: calc(50% - 40px);
+            right: calc(50% - 40px);
+        }
+
+        #yellow_sq{
+            background-color: red;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: calc(50% - 40px);
+            right: calc(50% - 40px);
+        }
+
+        #center_sq{
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50% - 75px);
+            left: calc(50% - 75px);
+        }
+
+        #center_circle{
+            background: red;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        }
+
+        #top_left{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: 80%;
+            right: 90%;
+        }
+        #top_right{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: 80%;
+            left: 90%;
+        }
+
+        #bottom_left{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 75%;
+            right: 90%;
+        }
+        #bottom_right{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 75%;
+            left: 90%;
+        }
+
+        #top_center{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: 92%;
+            left: calc(50% - 75px);
+        }
+        #bottom_center{
+            background: white;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 92%;
+            left: calc(50% - 75px);
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body >
+<h6 id="case_1">CASE_01</h6>
+    <section id="red_Box1">
+        <div id="red_circul"></div>
+        <div id="red_sq"></div>
+        <div id="top_left"></div>
+    </section>
+
+
+    <section id="green_Box2">
+        <div id="green_circul"></div>
+        <div id="green_sq"></div>
+        <div id="top_right"></div>
+    </section>
+
+
+    <section id="yellow_Box3">
+        <div id="yellow_circul"></div>
+        <div id="yellow_sq"></div>
+        <div id="bottom_left"></div>
+    </section>
+
+
+    <section id="pink_Box4">
+        <div id="pink_circul"></div>
+        <div id="pink_sq"></div>
+        <div id="bottom_right"></div>
+    </section>
+
+<div id="center_sq">
+    <div id="center_circle"></div>
+</div>
+
+<div id="top_center"></div>
+<div id="bottom_center"></div>
+</body>
+</html>
