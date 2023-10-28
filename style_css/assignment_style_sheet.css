@@ -149,7 +149,7 @@
     border-radius: 50px;
     width: 80px;
     height: 30px;
-    padding-left: 19px;
+    padding-left: 15px;
     padding-top: 5px;
 }
 .view_front{
@@ -171,5 +171,24 @@
 }
 .list_front:hover{
     color: #58a8fc;
+    text-decoration: none;
+}
+.open_view{
+    position: absolute;
+    bottom: 10px;
+    right: 300px;
+    border: 1px solid #cae3e6;
+    border-radius: 50px;
+    width: 80px;
+    height: 30px;
+    padding-left: 19px;
+    padding-top: 5px;
+}
+.open_front{
+    color: #b3d0f2;
+    text-decoration: none;
+}
+.open_front:hover{
+    color: cyan;
     text-decoration: none;
 }
