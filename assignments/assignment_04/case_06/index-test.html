@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test-case06</title>
+    <link rel="stylesheet" href="css_assets/css/normalize.css">
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+      .sky{
+          width: 100vw;
+          height: 100vh;
+          background-size: cover;
+          background-image: url("../case_06/assets/img/sky.jpg");
+
+          /*background-position: center;*/
+          /*width: 100%;*/
+          position: relative;
+          overflow-x: hidden;
+      }
+      .road{
+          background-image: url("../case_06/assets/img/road.jpg");
+          /*width: 1535px;*/
+          width: 2000%;
+          height: 250px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          display: block;
+
+          animation-name: road_animation;
+          animation-duration: 6s;
+          animation-iteration-count: infinite;
+          /*animation-play-state: running;*/
+          background-repeat: repeat-x;
+          animation-timing-function: linear;
+      }
+      .city{
+         background-image: url("../case_06/assets/img/city.png");
+          /*width: 100vw;*/
+          /*aspect-ratio: 1/1;*/
+          height: 250px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 208px;
+          /*margin: auto;*/
+
+          /*background-repeat: repeat-x;*/
+          /*animation-name: city_animation;*/
+          /*animation-duration: 6s;*/
+          /*animation-timing-function: linear;*/
+          /*animation-iteration-count: infinite;*/
+          /*z-index: 2;*/
+          width: 1000%;
+          display: block;
+
+      }
+      .car{
+          /*background-image: url("../case_06/assets/img/car.png");*/
+          /*width: 10px;*/
+          /*height: 10px;*/
+          position: absolute;
+          left: 450px;
+          top: 370px;
+          /*margin: auto;*/
+          /*display: inline-block;*/
+      }
+      .left_wheel{
+          /*background-image: url("../case_06/assets/img/wheel.png");*/
+          width: 250px;
+          height: 250px;
+          position: absolute;
+          bottom: 0px;
+          /*bottom: 0;*/
+          left: 495px;
+          /*right: 0;*/
+          /*margin: auto;*/
+      }
+        .right_wheel{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 0px;
+            left: 800px;
+        }
+
+        @keyframes road_animation {
+            100%{
+                transform: translateX(-75%);
+            }
+        }
+        /*@keyframes city_animation {*/
+        /*    100%{*/
+        /*        transform: translateX(-1500px);*/
+        /*    }*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div class="sky">
+        <div class="road"></div>
+    </div>
+
+    <div class="city"></div>
+    <div class="car">
+        <!--        background-image: url("../case_06/assets/img/car.png");-->
+        <img src="../case_06/assets/img/car.png" alt="car" width="500px" height="200px">
+    </div>
+    <div class="left_wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="lw" width="90px" height="90px">
+    </div>
+    <div class="right_wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="lw" width="90px" height="90px">
+    </div>
+
+</section>
+</body>
+</html>

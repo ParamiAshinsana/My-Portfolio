@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-CASE06</title>
+    <link rel="stylesheet" href="css_assets/css/normalize.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .sky{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-image: url("../case_06/assets/img/sky.jpg");
+
+            background-position: center;
+            /*width: 100%;*/
+            position: relative;
+            overflow-x: hidden;
+        }
+        .road{
+            background-image: url("../case_06/assets/img/road.jpg");
+            /*width: 1535px;*/
+            width: 5000%;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+
+
+            animation-name: road_animation;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            /*animation-play-state: running;*/
+            background-repeat: repeat-x;
+            animation-timing-function: linear;
+            display: block;
+            z-index: 1;
+        }
+        .city{
+            background-image: url("../case_06/assets/img/city.png");
+            /*width: 100vw;*/
+            /*aspect-ratio: 1/1;*/
+            height: 250px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            /*bottom: 0;*/
+            /*top: 208px;*/
+            /*margin: auto;*/
+
+            width: 5000%;
+            bottom: 200px;
+            display: block;
+            z-index: 1;
+            animation-name: city_animation;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            background-repeat: repeat-x;
+            animation-timing-function: linear;
+
+        }
+        .car{
+            /*background-image: url("../case_06/assets/img/car.png");*/
+            /*width: 10px;*/
+            /*height: 10px;*/
+            position: absolute;
+            left: 450px;
+            top: 370px;
+            /*margin: auto;*/
+            /*display: inline-block;*/
+
+
+            width: 400px;
+            left: 50%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+
+        }
+        .left_wheel{
+            /*background-image: url("../case_06/assets/img/wheel.png");*/
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 0px;
+            /*bottom: 0;*/
+            left: 495px;
+            /*right: 0;*/
+            /*margin: auto;*/
+        }
+        .right_wheel{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 0px;
+            left: 800px;
+        }
+
+        @keyframes road_animation {
+            100%{
+                /*transform: translateX(-75%);*/
+                transform: translateX(-3400px);
+            }
+        }
+        @keyframes city_animation {
+            100%{
+                /*transform: translateX(-75%);*/
+                transform: translateX(-1400px);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div class="sky">
+        <div class="road"></div>
+        <div class="city"></div>
+    </div>
+
+
+    <div class="car">
+        <!--        background-image: url("../case_06/assets/img/car.png");-->
+        <img src="../case_06/assets/img/car.png" alt="car" width="400px" height="200px">
+    </div>
+
+
+    <div class="left_wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="lw" width="90px" height="90px">
+    </div>
+    <div class="right_wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="lw" width="90px" height="90px">
+    </div>
+
+
+
+</section>
+</body>
+</html>

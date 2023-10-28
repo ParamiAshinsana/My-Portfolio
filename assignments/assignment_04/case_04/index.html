@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-CASE04</title>
+    <link rel="stylesheet" href="css_assets/css/normalize.css">
+
+    <style>
+        div{
+            border: 5px solid red;
+            width: 50px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation-name: water_drop;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes water_drop{
+            from{
+                width: 20px;
+            }
+            to{
+                width: 250px;
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>

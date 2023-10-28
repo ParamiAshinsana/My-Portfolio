@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-CASE03</title>
+    <link rel="stylesheet" href="css_assets/css/normalize.css">
+
+    <style>
+
+        :root{
+            --box-width: 200px;
+            --box-height: 100px;
+        }
+
+        body{
+            overflow: hidden;
+        }
+        div{
+            width: var(--box-width);
+            height: var(--box-height);
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 20px;
+
+            animation-name: my_animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition-timing-function: linear;
+        }
+
+
+        @keyframes my_animation {
+            0%{
+                /*background-color: yellow;*/
+                /*margin-left: 400px;*/
+                margin-top: 0;
+                margin-left: 0;
+
+            }
+            25%{
+                margin-top: 0;
+                margin-left: calc(100vw - var(--box-width));
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            50%{
+                margin-top: calc(100vh - var(--box-height));
+                margin-left: calc(100vw - var(--box-width));
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - var(--box-height));
+                transform: rotate(180deg);
+                background-color: deeppink;
+            }
+            100%{
+                margin-top: 0;
+                margin-left: 0;
+                transform: rotate(0deg);
+                background-color: greenyellow;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>

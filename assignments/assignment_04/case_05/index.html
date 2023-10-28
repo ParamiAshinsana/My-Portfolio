@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-CASE05</title>
+    <link rel="stylesheet" href="css_assets/css/normalize.css">
+
+    <style>
+        /*div{*/
+        /*    border: 5px solid black;*/
+        /*    width: 700px;*/
+        /*    height: 400px;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        :root{
+            --slide-width: 50vw;
+            --slide-height: 50vh;
+        }
+        div:first-child{
+            /*width: var(--box-width);*/
+            /*height: var(--box-height);*/
+            background-image: url("assets/slide1.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        div:nth-child(2){
+            /*width: var(--box-width);*/
+            /*height: var(--box-height);*/
+            background-image: url("assets/slide2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        div:nth-child(3){
+            /*width: var(--box-width);*/
+            /*height: var(--box-height);*/
+            background-image: url("assets/slide3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        div:nth-child(4){
+            /*width: var(--box-width);*/
+            /*height: var(--box-height);*/
+            background-image: url("assets/slide4.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section{
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        main{
+            overflow: hidden;
+            border: 5px solid red;
+            width: var(--slide-width);
+            height: var(--slide-height);
+            position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+        }
+        div{
+            width: var(--slide-width);
+            height: var(--slide-height);
+        }
+
+        @keyframes slide {
+            0% , 20%{
+                transform: translateX(0%);
+            }
+            25%, 45%{
+                transform: translateX(-25%);
+            }
+            50%, 70%{
+                transform: translateX(-50%);
+            }
+            75%, 100%{
+                transform: translateX(-75%);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
