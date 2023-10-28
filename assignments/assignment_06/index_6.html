@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06</title>
+
+    <link rel="stylesheet" href="style/style_css.css">
+    <link rel="stylesheet" href="style/bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+
+    <style>
+       /*#invoice_btn{*/
+       /*    margin-left: 100px;*/
+       /*    border: 2px solid darkgoldenrod;*/
+       /*}*/
+    </style>
+
+</head>
+<body>
+<header>
+    <h1>VTex POS System</h1>
+    <img id="header1img" src="assets/img/VTex_Logo.png" alt="" width="180px" height="130px">
+
+</header>
+
+<div id="div_nav">
+    <nav>
+        <ul id="navvv">
+            <li><a href="#home" class="navi_front">Home</a></li>
+            <li><a href="#customer" class="navi_front">Manage Customer</a></li>
+            <li><a href="#item"class="navi_front">Manage Item</a></li>
+            <li><a href="#place_order"class="navi_front">Place Orders</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="blurry-background"></div>
+<section id="home">
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <!--                <h2>Home</h2>-->
+                <img src="assets/img/VTEX.png" alt="" width="250px" height="100px" class="vtex-image">
+            </div>
+            <div class="col" >
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/1.png" class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <!--                           <h5 class="card-title">Card title</h5>-->
+                        <p class="card-text">
+                            VTex,  we take immense pride in offering not just products but a remarkable shopping
+                            experience that revolves around you, our valued customer. Our shop is more than just a
+                            place to buy items; it's a destination where your needs, preferences, and happiness are our top priorities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/2.png" class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <!--                           <h5 class="card-title">Card title</h5>-->
+                        <p class = "card-text">
+                            Vtex, we are dedicated to providing you with a shopping experience that goes beyond just
+                            selling products. Our shop is meticulously organized and optimized for efficient and
+                            effective item management, ensuring that you have access to the best selection, quality, and service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/3.png" class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <!--                           <h5 class="card-title">Card title</h5>-->
+                        <p class ="card-text">
+                            VTex , we take immense pride in our commitment to order management excellence.
+                            We understand that a seamless and efficient order management process is crucial for a
+                            positive customer experience. Our shop is designed to provide you with a hassle-free and
+                            convenient way to place and track your orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="customer">
+    <h2>Manage Customers</h2>
+    <!--    <h2>Manage Customer</h2>-->
+    <!--    <p>Learn more about our single-page application and how it works.</p>-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Customer ID :</label>
+                        <input type="text" class="form-control" id="id" placeholder="Type your ID here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer_name" class="form-label">Customer Name :</label>
+                        <input type="text" class="form-control" id="customer_name" placeholder="Type your Name here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer_address" class="form-label">Customer Address :</label>
+                        <input type="text" class="form-control" id="customer_address" placeholder="Type your Address here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer_mobile" class="form-label">Customer Mobile No :</label>
+                        <input type="text" class="form-control" id="customer_mobile" placeholder="Type your NO here">
+                    </div>
+
+                    <div class="mt-5 m-5">
+                        <button type="button" class="btn btn-warning">Register</button>
+                        <button type="button" class="btn btn-warning">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div class="col">
+                <table class="table col col-xxl-8 col-xl-8 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <thead>
+                    <tr>
+                        <th scope="col">Customer ID</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Customer Address</th>
+                        <th scope="col">Customer Mobile No</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <!--                    <td colspan="2">Larry the Bird</td>-->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="item">
+    <h2>Manage Items</h2>
+    <!--    <h2>Manage Item</h2>-->
+    <!--    <p>Contact us if you have any questions or feedback.</p>-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="item_code" class="form-label">Item Code :</label>
+                        <input type="text" class="form-control" id="item_code" placeholder="Type Item Code here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item_name" class="form-label">Item Name :</label>
+                        <input type="text" class="form-control" id="item_name" placeholder="Type Item Name here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item_price" class="form-label">Item Price :</label>
+                        <input type="text" class="form-control" id="item_price" placeholder="Type Item Price here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item_qty" class="form-label">Item Quantity :</label>
+                        <input type="text" class="form-control" id="item_qty" placeholder="Type Item Quantity here">
+                    </div>
+
+                    <div class="mt-5 m-5">
+                        <button type="button" class="btn btn-warning">Register</button>
+                        <button type="button" class="btn btn-warning">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div class="col">
+                <table class="table col col-xxl-8 col-xl-8 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Price</th>
+                        <th scope="col">Item Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <!--                    <td colspan="2">Larry the Bird</td>-->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="place_order">
+    <h2>Place Orders</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="order_id" class="form-label">Order ID :</label>
+                        <input type="text" class="form-control" id="order_id" placeholder="Type Item Code here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer_id" class="form-label">Customer ID :</label>
+                        <input type="text" class="form-control" id="customer_id" placeholder="Type Item Name here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="items_code" class="form-label">Item Code :</label>
+                        <input type="text" class="form-control" id="items_code" placeholder="Type Item Price here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="items_name" class="form-label">Item Name :</label>
+                        <input type="text" class="form-control" id="items_name" placeholder="Type Item Quantity here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="order_date" class="form-label">Order Date :</label>
+                        <input type="text" class="form-control" id="order_date" placeholder="Type Item Quantity here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="unit_price" class="form-label">Unit Price :</label>
+                        <input type="text" class="form-control" id="unit_price" placeholder="Type Item Quantity here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="qty" class="form-label">Quantity :</label>
+                        <input type="text" class="form-control" id="qty" placeholder="Type Item Quantity here">
+                    </div>
+
+
+                    <div class="mt-5 m-5">
+                        <button type="button" class="btn btn-warning">Place Order</button>
+                        <button type="button" class="btn btn-warning">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button id="invoice_btn" type="button" class="btn btn-warning">Update</button>
+
+                        <!--                        <button  id="invoice_btn" type="button" class="btn btn-warning">Invoice</button>-->
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div class="col">
+                <table class="table col col-xxl-8 col-xl-8 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Price</th>
+                        <th scope="col">Item Quantity</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Price</th>
+                        <th scope="col">Item Quantity</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <!--                    <td colspan="2">Larry the Bird</td>-->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="invoice_content" style="display: none;">
+
+</div>
+
+
+
+<script src="style/bootstrap/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+<script src="assets/lib/jquery.min.js"></script>
+<script>
+    // JavaScript code to handle the click event
+    // const invoiceButton = document.getElementById("invoice_btn");
+    // const invoiceContent = document.getElementById("invoice_content");
+    //
+    // invoiceButton.addEventListener("click", () => {
+    //     // You can load the content here dynamically
+    //     // For example, you can fetch it from a separate HTML file or generate it using JavaScript
+    //     // For simplicity, I'm just showing/hiding a div
+    //     if (invoiceContent.style.display === "none") {
+    //         invoiceContent.style.display = "block";
+    //     } else {
+    //         invoiceContent.style.display = "none";
+    //     }
+    // });
+</script>
+</body>
+</html>
