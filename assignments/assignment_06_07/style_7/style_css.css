@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url("../assets/img/VTEX.png");*/
+
+
+}
+
+header {
+    background-color: white;
+    color: #FFA800;
+    text-align: left;
+    padding: 7px;
+}
+
+nav {
+    text-align: center;
+    background-color: #FFA800;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    display: none;
+    padding: 20px;
+}
+
+#home:target, #customer:target, #item:target , #place_order:target , #invoice_btn:target{
+    display: block;
+}
+
+#home {
+    background-color: #d0d0d0;
+}
+
+#customer {
+    background-color: #e0e0e0;
+}
+
+#item {
+    background-color: #d0d0d0;
+}
+#place_order {
+    background-color: #d0d0d0;
+
+}
+#invoice_btn{
+    background-color: #d0d0d0;
+    text-decoration: none;
+}
+.invoice_class{
+    text-decoration: none;
+}
+.navi_front{
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#header1img{
+    position: absolute;
+    left: 280px;
+    bottom: 590px;
+}
+#navvv{
+    position: relative;
+    top: 2px;
+}
+.vtex-image{
+    position: absolute;
+    left:560px;
+    top: 120px;
+}
+.blurry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/VTEX.png'); /* Replace with your image path */
+    background-size: cover;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Place the background behind other content */
+}
+/*#section_invoice{*/
+/*    text-decoration: none;*/
+/*}*/
+#section_invoice a {
+    text-decoration: none;
+
+}
+#section_invoice{
+    position: absolute;
+    top: 870px;
+    left: 150px;
+}

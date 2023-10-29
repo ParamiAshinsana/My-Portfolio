@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 06</title>
+    <title>Simple SPA</title>
 
-    <link rel="stylesheet" href="style/style_css.css">
+    <link rel="stylesheet" href="style_7/style_css.css">
     <link rel="stylesheet" href="style/bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
 
     <style>
-       /*#invoice_btn{*/
-       /*    margin-left: 100px;*/
-       /*    border: 2px solid darkgoldenrod;*/
-       /*}*/
+
     </style>
 
 </head>
@@ -35,7 +31,7 @@
     </nav>
 </div>
 
-<div class="blurry-background"></div>
+<!--<div class="blurry-background"></div>-->
 <section id="home">
 
     <div class="container">
@@ -306,13 +302,15 @@
                         <button type="button" class="btn btn-warning">Place Order</button>
                         <button type="button" class="btn btn-warning">Update</button>
                         <button type="button" class="btn btn-danger">Delete</button>
-                        <button id="invoice_btn" type="button" class="btn btn-warning">Update</button>
 
-                        <!--                        <button  id="invoice_btn" type="button" class="btn btn-warning">Invoice</button>-->
+                        <div id="section_invoice">
+                            <button type="button" class="btn btn-warning" ><a href="#invoice_btn">Invoice</a></button>
+                        </div>
+
+
+
 
                     </div>
-
-
                 </form>
 
             </div>
@@ -372,9 +370,51 @@
     </div>
 </section>
 
-<div id="invoice_content" style="display: none;">
+<section id="invoice_btn">
+    <h2>Place Orders</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="total" class="form-label">Total :</label>
+                        <input type="text" class="form-control" id="total" placeholder="Type Total here">
+                    </div>
 
-</div>
+                    <div class="mb-3">
+                        <label for="discount" class="form-label">Discount :</label>
+                        <input type="number" class="form-control" id="discount" placeholder="Discount here">
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">Sub Total:</label>
+                        <label  class="form-label">--Sub Total here--</label>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col">
+
+                <div class="mb-3">
+                    <label for="cash" class="form-label">Cash :</label>
+                    <input type="text" class="form-control" id="cash" placeholder="Type Cash here">
+                </div>
+
+                <div class="mb-3">
+                    <label  class="form-label">Sub Total:</label>
+                    <label  class="form-label">--Sub Total here--</label>
+                </div>
+
+                <div class="mb-3">
+                    <label  class="form-label">Net Total:</label>
+                    <label  class="form-label">--Net Total here--</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
