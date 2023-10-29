@@ -1,16 +1,6 @@
 #educations_section{
-    /*position: absolute;*/
-    /*top: 5000px;*/
     height: 1400px;
 }
-
-/*..----------------------------------..*/
-/*Hover to reveal a description of the book */
-
-/* Source code:
-https://github.com/robole/artifice
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
 
 :root{
@@ -21,23 +11,15 @@ https://github.com/robole/artifice
 * {
     box-sizing: border-box;
 }
-
-body{
-    /*font-family: 'Pontano Sans', sans-serif;*/
-    /*font-size: calc(0.65em + .05vw);*/
-}
-
 a{
     color:var(--link-color);
     font-weight:bold;
 }
-
 .edu_topic{
     font-family: 'Stint Ultra Expanded', cursive;
     font-size: 1.5em;
     text-align: center;
 }
-
 .book {
     display: inline-block;
     position: relative;
@@ -158,5 +140,4 @@ a{
 
     font-family: 'Pontano Sans', sans-serif;
     font-size: calc(0.65em + .05vw);
-
 }

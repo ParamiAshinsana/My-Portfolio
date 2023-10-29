@@ -1,7 +1,4 @@
 #contact_section{
-    /*position: absolute;*/
-    /*top: 7400px;*/
-
     box-shadow: 1px 1px 20px #706d6d,
     1px 1px 40px #d0d0d0;
     /*box-shadow: 1px -1px 20px #706d6d,*/
@@ -9,14 +6,7 @@
     /*1px 1px 20px #706d6d;*/
     height: 780px;
     padding-top: 50px;
-
 }
-/*#contact_wavy{*/
-/*    position: absolute;*/
-/*    !*top: 600px;*!*/
-/*    left: 30vw;*/
-/*    padding: 50px;*/
-/*}*/
 /*------new--------*/
 .contact{
     display: grid;
@@ -61,9 +51,7 @@
 .contact-list li{
     margin-bottom: 10px;
     display: block;
-
 }
-
 .contact-list i{
     display: inline-block;
     color: #00ff00;
@@ -76,32 +64,9 @@
     transform: scale(1.01) translateY(-5px);
     color: #00ff00;
 }
-/*.contact-icons i{*/
-/*    display: inline-flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    width: 40px;*/
-/*    height: 40px;*/
-/*    background: transparent;*/
-/*    border: 2px solid #00ff00;*/
-/*    border-radius: 50%;*/
-/*    font-size: 20px;*/
-/*    color: #00ff00;*/
-/*    text-decoration: none;*/
-/*    margin: 30px 15px 30px 0;*/
-/*    transition: .5s ease;*/
-/*    opacity: 0;*/
-/*    animation: slideLeft 1s ease forwards;*/
-/*    animation-delay: calc(.2s * var(--i));*/
-/*}*/
-/*.contact-icons i:hover{*/
-/*    background: #00ff00;*/
-/*    color: #000;*/
-/*    box-shadow: 0 0 20px #00ff00;*/
-/*}*/
 .contact-form form{
     position: relative;
-    /*opacity: 80%;*/
+    opacity: 80%;
 }
 .contact-form form input,form textarea{
     border: none;
@@ -173,15 +138,11 @@
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
-
 }
 #contact_wavy {
     position: relative;
-    /*top: 600px;*/
-    /*left: 10vw;*/
     padding: 50px;
     bottom: 530px;
-    /*display: none;*/
     width: 600px;
     height: 100px;
 }
@@ -193,9 +154,6 @@
         transform: translateY(-20px)
     }
 }
-
-
-
 /*social media icons*/
 #social_media_container {
     display: inline;
@@ -204,10 +162,7 @@
 
     width: 700px;
     height: 100px;
-    /*z-index: 3;*/
-    /*top: 550px;*/
     left: 20px;
-    /*border: 5px solid blue;*/
     padding-left: 20px;
 }
 .gmail_icons{
@@ -221,15 +176,12 @@
     position: absolute;
     z-index: 1;
     top: 20px;
-    /*left: 130px;*/
-
 }
 .facebook_icon{
     display: inline;
     position: absolute;
     z-index: 1;
     top: 20px;
-    /*left: 260px;*/
     left: 140px;
 }
 .linkedin_icon{
@@ -237,7 +189,6 @@
     position: absolute;
     z-index: 1;
     top: 20px;
-    /*left: 390px;*/
     left: 250px;
 }
 .twitter_icon{
@@ -245,7 +196,6 @@
     position: absolute;
     z-index: 1;
     top: 20px;
-    /*left: 520px;*/
     left: 390px;
 }
 .github_icon{
@@ -253,7 +203,6 @@
     position: absolute;
     z-index: 1;
     top: 20px;
-    /*left: 650px;*/
     left: 520px;
 }
 .medium_icon{
@@ -261,13 +210,11 @@
     position: absolute;
     z-index: 1;
     bottom: 40px;
-    /*left: 770px;*/
     left: 640px;
 }
 .last-text{
     position: relative;
 }
 #contacts{
-    /*border: 1px solid yellow;*/
     padding-bottom: 50px;
 }

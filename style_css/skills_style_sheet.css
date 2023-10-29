@@ -1,6 +1,4 @@
 #skills_section{
-    /*position: absolute;*/
-    /*top: 3000px;*/
     height: 1000px;
 }
 #skill-paragraph{
@@ -9,7 +7,6 @@
     position: relative;
     margin: 25px;
     color: white;
-
 }
 #java_id{
     position: absolute;
@@ -76,10 +73,6 @@
     top:320px;
     left: 1250px;
 }
-/*div:nth-child(6) {*/
-/*    position: relative;*/
-/*    top: 100px;*/
-/*}*/
 #about_video_01{
     position: absolute;
     top: 0;
@@ -90,8 +83,6 @@
     filter: blur(10px); /* Adjust the blur amount as needed */
     z-index: 0;
 }
-
-
 /*---------------------------------*/
 .skill_container {
     position: relative;

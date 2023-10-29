@@ -1,6 +1,4 @@
 #gallery_section{
-    /*position: absolute;*/
-    /*top: 1750px;*/
     height: 1400px;
 }
 #imgA{
@@ -11,15 +9,10 @@
 
     background-image: url("../assets/img/A.jpg");
     background-position: center;
-    width: 300px;
-    height: 500px;
+    /*width: 300px;*/
+    /*height: 500px;*/
 }
 #imgB{
-    /*position: absolute;*/
-    /*top: 850px;*/
-    /*left: 700px;*/
-    /*border-radius: 10px;*/
-
     position: absolute;
     top: 550px;
     left: 570px;
@@ -79,7 +72,6 @@
 .image-container img:not(:hover) {
     filter: grayscale(100%); /* Convert the image to black and white by default */
 }
-
 
 @media all and (max-width: 840px){
     #imgA{
