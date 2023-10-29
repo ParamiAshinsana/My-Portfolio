@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 08-Case 02</title>
+    <style>
+        body {
+            background-color: #223a40;
+        }
+        div {
+            width: 150px;
+            height: 50px;
+            border: 0.5px solid white;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #light {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            border-bottom: 3px solid white;
+            border-top: 3px solid white;
+            padding: 20px;
+        }
+
+        #button_set {
+            position: absolute;
+            top: 590px;
+            left: 590px;
+        }
+
+        #start_btn {
+            width: 100px;
+            height: 50px;
+        }
+
+        #stop_btn {
+            width: 100px;
+            height: 50px;
+        }
+
+        div:first-child {
+            position: relative;
+            top: -130px;
+        }
+
+        div:nth-child(6) {
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section id="light">
+        <div class="light" style="background-color: #00f;">1</div>
+        <div class="light" style="background-color: #0f0;"></div>
+        <div class="light" style="background-color: #03fce3;"></div>
+        <div class="light" style="background-color: #f0fc03;"></div>
+        <div class="light" style="background-color: #fc6203;"></div>
+        <div class="light" style="background-color: #f00;">6</div>
+    </section>
+
+    <section id="button_set">
+        <button type="button" id="start_btn">Start</button>
+        <button type="button" id="stop_btn">Stop</button>
+    </section>
+</main>
+
+<script src="assets_8/lib/jquery.min.js"></script>
+
+<script>
+    var C1 = 0;
+    var light_Count = 6;
+    var light_ID = null;
+
+    const updateLightPanel = () => {
+        C1++;
+        $(".light").eq(C1 % light_Count).css("background", "#00f");
+        $(".light").eq(C1 % light_Count-1).css("background", "#0f0");
+        $(".light").eq(C1 % light_Count-2).css("background", "#03fce3");
+        $(".light").eq(C1 % light_Count-3).css("background", "#f0fc03");
+        $(".light").eq(C1 % light_Count-4).css("background", "#fc6203");
+        $(".light").eq(C1 % light_Count-5).css("background", "#f00");
+
+
+    }
+
+    $("button:first-child").on("click", () => {
+        if (light_ID == null) {
+            light_ID = setInterval(updateLightPanel, 800);
+        }
+    });
+
+    $("button:nth-child(2)").on("click", () => {
+        clearInterval(light_ID);
+        light_ID = null;
+    });
+</script>
+</body>
+</html>

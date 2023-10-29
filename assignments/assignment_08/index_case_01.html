@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 08-Case 01</title>
+
+  <style>
+    body{
+      background-color: white;
+    }
+    #que_section{
+      width: 1150px;
+      height: 250px;
+      background-color: white;
+      position: absolute;
+      top: 200px;
+      left: 10px;
+      /*border: 2px solid black;*/
+    }
+    #house_section{
+      width: 490px;
+      height: 460px;
+      background-color: red;
+      position: absolute;
+      top: 63px;
+      left: 1042px;
+      /*border: 2px solid black;*/
+    }
+    #road_div{
+      width: 1150px;
+      height: 1.5px;
+      background-color: black;
+      position: absolute;
+      bottom: 32.5px;
+    }
+    .man img{
+      /*border: 5px solid black;*/
+    }
+    .man{
+      position: absolute;
+      top: 80px;
+      left: 10px;
+    }
+    .letters{
+        /*border: 0.5px solid black;*/
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        left: 40px;
+        font-size: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 80px;
+    }
+    #button_set{
+        position: absolute;
+        top: 490px;
+        left: 400px;
+    }
+    #start_btn{
+        width: 100px;
+        height: 50px;
+        margin: 40px;
+    }
+    #stop_btn{
+        width: 100px;
+        height: 50px;
+        margin: 40px;
+    }
+
+  </style>
+
+</head>
+<body>
+<main>
+    <section id="que_section">
+        <section id="alphabet">
+            <div class="letters">A</div>
+            <div class="letters">B</div>
+            <div class="letters">C</div>
+            <div class="letters">D</div>
+            <div class="letters">E</div>
+            <div class="letters">F</div>
+        </section>
+        <div class="man">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+            <img src="assets_8/gif/walking_man.gif" alt="" width="176px" height="150px">
+        </div>
+        <div id="road_div"></div>
+    </section>
+<!-------------------------------------------------------------------------------------------------------------------->
+    <section id="house_section">
+        <div>
+            <img src="assets_8/gif/house.gif" alt="" width="490px" height="460px">
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------------------------------->
+<section>
+    <section id="button_set">
+        <button type="button" id="start_btn">Start</button>
+        <button type="button" id="stop_btn">Stop</button>
+    </section>
+</section>
+
+</main>
+
+<script src="assets_8/lib/jquery.min.js"></script>
+
+<script>
+    var C1 = null;
+    $(document).ready(function() {
+
+        var $textElements = $('.letters');
+
+
+        function cycleText() {
+            var textArray = $textElements.map(function() {
+                return $(this).text();
+            }).get();
+
+
+            textArray.unshift(textArray.pop());
+
+            $textElements.each(function(index) {
+                $(this).text(textArray[index]);
+            });
+        }
+
+        $("button:first-child").on("click" , ()=>{
+            if(C1 == null){
+                C1 = setInterval(cycleText, 1000);
+            }
+        });
+        $("button:nth-child(2)").on("click" , ()=>{
+            clearInterval(C1);
+            C1 = null;
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

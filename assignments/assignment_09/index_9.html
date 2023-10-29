@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 09</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            /*margin: 20px;*/
+            width: 150px;
+            height: 50px;
+            border: 0.5px solid white;
+            display: inline-block;
+        }
+        #light{
+            position: absolute;
+            top: 320px;
+            left: 350px;
+            /*border: 2px solid red;*/
+        }
+        #button_set{
+            position: absolute;
+            top: 420px;
+            left: 550px;
+        }
+        #start_btn{
+            width: 100px;
+            height: 50px;
+        }
+        #stop_btn{
+            width: 100px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section id="light">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+
+    <section id="button_set">
+        <button type="button" id="start_btn">Start</button>
+        <button type="button" id="stop_btn">Stop</button>
+    </section>
+
+</main>
+
+
+<audio src="assets/audio/audio.mp3" id="audio1"></audio>
+<script src="assets/lib/jquery.min.js"></script>
+<script>
+    var C1 =0;
+    var current_direction = "RIGHT";
+    var light_Count = 6;
+    var interval_ID = null;
+
+    const updateLightPanel = ()=>{
+        $(".light").css("background","white");
+
+        if(current_direction == "RIGHT"){
+            C1++;
+            $(".light").eq(C1).css("background","#E0115F");
+            if(C1-1>=0){
+                $(".light").eq(C1-1).css("background","#FA8072");
+            }
+            
+            if(C1 == light_Count-1){
+                current_direction = "LEFT";
+            }
+        }else{
+            C1--;
+            $(".light").eq(C1).css("background","#E0115F");
+            $(".light").eq(C1+1).css("background","#FA8072");
+            if(C1 === 0){
+                current_direction = "RIGHT";
+            }
+        }
+    }
+
+    $("button:first-child").on("click" , ()=>{
+        if(interval_ID == null){
+            interval_ID = setInterval(updateLightPanel,200);
+            $("#audio1")[0].play();
+        }
+    });
+
+    $("button:nth-child(2)").on("click" , ()=>{
+        clearInterval(interval_ID);
+        interval_ID = null;
+        $("#audio1")[0].pause();
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>
