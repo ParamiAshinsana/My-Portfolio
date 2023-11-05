@@ -1,37 +1,144 @@
-/*!*--------new-02--------------*!*/
-.navi_front{
-    position: relative;
-    font-size: 20px;
+/*!*!*--------new-02--------------*!*!*/
+/*.navi_front{*/
+/*    position: relative;*/
+/*    font-size: 20px;*/
 
-    color: black;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    font: 20px Raleway;*/
+/*    margin: 0px 10px;*/
+/*    padding: 10px 10px;*/
+/*    position: relative;*/
+/*    z-index: 0;*/
+/*    cursor: pointer;*/
+/*}*/
+/*#navigation_id{*/
+/*    position: absolute;*/
+/*    left: 700px;*/
+/*    top: 15px;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.container{*/
+/*    width: 100vw;*/
+/*    height: 50px;*/
+/*    background-color: white;*/
+/*    position: fixed;*/
+/*    top: 0px;*/
+/*    z-index: 9999;*/
+/*    text-decoration: none;*/
+
+/*    font-family: Raleway;*/
+/*}*/
+
+
+/*!* Border from Y to X  *!*/
+/*div.borderYtoX a:before, div.borderYtoX a:after {*/
+/*    position: absolute;*/
+/*    opacity: 0.5;*/
+/*    height: 100%;*/
+/*    width: 2px;*/
+/*    content: '';*/
+/*    background: black;*/
+/*    transition: all 0.3s;*/
+/*}*/
+
+/*div.borderYtoX a:before {*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+/*}*/
+
+/*div.borderYtoX a:after {*/
+/*    right: 0px;*/
+/*    bottom: 0px;*/
+/*}*/
+
+/*div.borderYtoX a:hover:before, div.borderYtoX a:hover:after {*/
+/*    opacity: 1;*/
+/*    height: 2px;*/
+/*    width: 100%;*/
+/*}*/
+
+.nav_headers{
+    width: 100vw;
+    height: 60px;
+    /*background-color: rgba(0,0,0,0.6);*/
+    background-color: rgba(128, 128, 128, 0.6);
+    backdrop-filter: blur(3px); /* Add this line to apply the blur effect */
+    padding: 5px 0px 0px 0px;
+    position: fixed;
+
 }
-#navigation_id{
-    position: absolute;
-    left: 700px;
-    top: 15px;
+.nav_bar{
+    position: relative;
+    margin-right: 30px;
+
+    /*margin: 0px 10px;*/
+    /*padding: 10px 10px;*/
+}
+.nav_headers>ul{
+    float: right;
+    margin-top: 15px;
+}
+.nav_headers>ul>li{
+    list-style: none;
+    display: inline-block;
+}
+.nav_headers>ul>li>a{
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.check_btn{
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+    /*this line added by me*/
+    margin-right: 30px;
+}
+#check{
+    display: none;
+}
+
+@media all and (max-width: 970px){
+    nav{
+        padding: 0px 50px;
+    }
+    .check_btn{
+        display: block;
+    }
+    nav>ul{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(128, 128, 128, 0.6);
+        backdrop-filter: blur(3px); /* Add this line to apply the blur effect */
+        position: fixed;
+        top: 47px;
+        left: -108%;
+        text-align: center;
+
+        transition: 1.5s ease;
+    }
+    .nav_headers>ul>li{
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+
+    }
+    #check:checked~ ul{
+        left: 0;
+    }
 }
 .container{
-    width: 100vw;
-    height: 50px;
-    background-color: white;
     position: fixed;
     top: 0px;
     z-index: 9999;
-    text-decoration: none;
 
-    font-family: Raleway;
 }
-
-
-/* Border from Y to X  */
 div.borderYtoX a:before, div.borderYtoX a:after {
     position: absolute;
     opacity: 0.5;
@@ -40,6 +147,8 @@ div.borderYtoX a:before, div.borderYtoX a:after {
     content: '';
     background: black;
     transition: all 0.3s;
+
+    /*margin: 30px;*/
 }
 
 div.borderYtoX a:before {
