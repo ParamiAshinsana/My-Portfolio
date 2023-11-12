@@ -14,8 +14,8 @@
     position: relative;
     font-size: 35px;
     color: white;
-    top: 160px;
-    left: 17vw;
+    top: 100px;
+    left: 1vw;
 }
 #h2_element{
     position: relative;
@@ -33,19 +33,19 @@
     display: inline;
     left: 67vw;
     position: absolute;
-    top: 150px;
-    border-radius: 100%;
+    top: 80px;
+    /*border-radius: 100%;*/
 
 }
 .rounded-image{
-    border-radius: 50px;
+    border-radius: 20px;
     /*box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;*/
     box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
     z-index: 1;
 }
 #line_img{
     display: inline;
-    top: 350px;
+    top: 250px;
     left: 245px;
     position: relative;
     z-index: 10;
@@ -56,7 +56,7 @@
     background-color: #FFFFFF;
     position: absolute;
     display: inline;
-    top: 500px;
+    top: 440px;
 }
 #top_social_icons{
     display: inline;
@@ -76,7 +76,7 @@
     width: 840px;
     height: 100px;
     z-index: 3;
-    top: 700px;
+    top: 600px;
     left: 20px;
 }
 .gmail_icons{
@@ -134,7 +134,7 @@
     left: 760px;
 }
 #up_main_paragraph_01{
-    top: 410px;
+    top: 360px;
     left: 300px;
     position: absolute;
     z-index: 10;
@@ -142,7 +142,7 @@
     color: white;
 }
 #up_main_paragraph_02{
-    top: 500px;
+    top: 460px;
     left: 300px;
     position: absolute;
     z-index: 10;
@@ -175,7 +175,7 @@
     /*background-clip: border-box;*/
     background-size: 200% auto;
     color: black;
-    background-clip: text;
+    /*background-clip: text;*/
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -185,7 +185,7 @@
     position: relative;
     font-size: 93px;
     /*color: white;*/
-    top: 155px;
+    top: 85px;
     left: 3vw;
     text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.5);
 }

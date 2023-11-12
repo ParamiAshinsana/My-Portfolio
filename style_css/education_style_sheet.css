@@ -28,6 +28,8 @@ a{
     width: 300px;
     height:400px;
     margin:0 auto;
+    margin-bottom: -200px;
+    margin-top: -200px;
     /*margin-top: 5rem;*/
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
@@ -125,7 +127,6 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border: 2px solid black;
 
     font-family: 'Pontano Sans', sans-serif;
     font-size: calc(0.65em + .05vw);
@@ -136,7 +137,7 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border: 2px solid black;
+
 
     font-family: 'Pontano Sans', sans-serif;
     font-size: calc(0.65em + .05vw);

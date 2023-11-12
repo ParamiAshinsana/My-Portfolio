@@ -7,6 +7,7 @@ const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const sriLankanMobileNumberRegex = /^(\+94|0)[1-9][0-9]{8}$/;
 const regEmail = new RegExp(emailPattern);
 const regMobile = new RegExp(sriLankanMobileNumberRegex);
+ItemIDAutoMake()
 
 // --------------------------------------------------------------------------------
 const clear = () => {
@@ -80,6 +81,7 @@ $("#item-btns>button[type='button']").eq(0).on("click", () => {
             text: 'Please enter Item Code'
         })
     }
+    ItemIDAutoMake()
 
 });
 
@@ -183,3 +185,20 @@ $('#item_search').on('input' ,() => {
         $('#item-tbl-body').append(tbl_row);
     });
 });
+
+// Item ID Generate
+function ItemIDAutoMake() {
+    try {
+        let lastID = item_db[item_db.length - 1].it_code
+        let newID = parseInt(lastID.substring(1, 4)) + 1;
+        if (newID < 10) {
+            $('#item_code').val("I00" + newID);
+        } else if (newID < 100) {
+            $('#item_code').val("O0" + newID);
+        } else {
+            $('#item_code').val("O" + newID);
+        }
+    } catch (e) {
+        $('#item_code').val("I001");
+    }
+}

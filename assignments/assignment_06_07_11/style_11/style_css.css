@@ -115,3 +115,35 @@ section {
     display: block;
     text-shadow: 5px 5px 3px white;
 }
+/*Responsive*/
+/* Add a media query for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+nav.navbar {
+    background-color: #FFA800 !important;
+    font-size: 25px !important;
+}
+/* Responsive columns */
+.card{
+    margin: 0 auto 20px;
+    text-align: center;
+}
+/*.center-cols {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*}*/

@@ -10,7 +10,7 @@ const sriLankanMobileNumberRegex = /^(\+94|0)[1-9][0-9]{8}$/;
 const regEmail = new RegExp(emailPattern);
 const regMobile = new RegExp(sriLankanMobileNumberRegex);
 
-
+OrderIDAutoMake()
 
 function GetTodayDate() {
     var tdate = new Date();
@@ -168,32 +168,64 @@ $("#order-btns>button[type='button']").eq(0).on("click", () => {
             text: 'Please enter valid Customer Mobile'
         })
     }
+    OrderIDAutoMake()
     $('#subTotal').text(total);
     makeTotal();
 
 });
 
-function loadItemID() {
- console.log("item");
-    $('#inputItem').empty();
-    item_db.map((item, index) => {
-        let record = `<option value="${item.it_code}">${item.it_code}</option>`;
-        $("#inputItem").append(record);
-    });
-}
+// function loadItemID() {
+//  console.log("item");
+//     $('#inputItem').empty();
+//     item_db.map((item, index) => {
+//         let record = `<option value="${item.it_code}">${item.it_code}</option>`;
+//         $("#inputItem").append(record);
+//     });
+// }
+// function loadCustomerID() {
+//     console.log("customer");
+//     $('#oCid').empty();
+//     // customer_db.map((item, index) => {
+//     //     let record = `<option value="${item.cust_id}">${item.cust_id}</option>`;
+//     //     $("#oCid").append(record);
+//     // });
+//     customer_db.forEach(customer => {
+//         $('#oCid').append($('<option>', {
+//             value: customer.cust_id,
+//             text: customer.cust_id
+//         }));
+//     });
+// }
+
 function loadCustomerID() {
-    console.log("customer");
     $('#oCid').empty();
-    // customer_db.map((item, index) => {
-    //     let record = `<option value="${item.cust_id}">${item.cust_id}</option>`;
-    //     $("#oCid").append(record);
-    // });
-    customer_db.forEach(customer => {
-        $('#oCid').append($('<option>', {
-            value: customer.cust_id,
-            text: customer.cust_id
-        }));
-    });
+
+    if (customer_db.length==0){
+        $('#oCid').append(`<option>Choose Customer</option>`);
+    }else{
+        $('#oCid').append(`<option>Choose Customer</option>`);
+        customer_db.forEach(customer => {
+            $('#oCid').append($('<option>', {
+                value: customer.cust_id,
+                text: customer.cust_id
+            }));
+        });
+    }
+}
+function loadItemID() {
+    $('#inputItem').empty();
+
+    if (item_db.length==0){
+        $('#inputItem').append(`<option>Choose Item</option>`);
+    }else{
+        $('#inputItem').append(`<option>Choose Item</option>`);
+        item_db.forEach(item => {
+            $('#inputItem').append($('<option>', {
+                value: item.it_code,
+                text: item.it_code
+            }));
+        });
+    }
 }
 
 // search customer
@@ -202,17 +234,17 @@ function searchCustomerById(cust_id) {
     return customer; // Returns the customer object or undefined if not found
 }
 
-$('#oCid').change(function () {
-    if ($('#oCid').val() !== "Choose...") {
-
-        const selectedItem = searchCustomerById($('#oCid').val());
-        $('#customerName').val(selectedItem.cust_name);
-        // $('#states').val(selectedItem[2]);
-        // $('#oAddress').val(selectedItem[3]);
-    } else {
-
-    }
-});
+// $('#oCid').change(function () {
+//     if ($('#oCid').val() !== "Choose...") {
+//
+//         const selectedItem = searchCustomerById($('#oCid').val());
+//         $('#customerName').val(selectedItem.cust_name);
+//         // $('#states').val(selectedItem[2]);
+//         // $('#oAddress').val(selectedItem[3]);
+//     }else {
+//
+//     }
+// });
 
 // search item
 function searchItemByCode(it_code) {
@@ -232,3 +264,31 @@ $('#inputItem').change(function () {
 
     }
 });
+
+$('#oCid').change(function () {
+    if ($('#oCid').val() !== "Choose...") {
+
+        const selectedItem = searchCustomerById($('#oCid').val());
+        $('#cus_Code').val(selectedItem.cust_id);
+        $('#customerName').val(selectedItem.cust_name);
+    } else {
+
+    }
+});
+
+// Order ID Generate
+function OrderIDAutoMake() {
+    try {
+        let lastOID = order_db[order_db.length-1].or_id
+        let newOID = parseInt(lastOID.substring(1,4))+1;
+        if (newOID < 10){
+            $('#order_id').val("O00"+newOID);
+        }else if(newOID < 100){
+            $('#order_id').val("O0"+newOID);
+        }else {
+            $('#order_id').val("O"+newOID);
+        }
+    }catch (e) {
+        $('#order_id').val("O001");
+    }
+}

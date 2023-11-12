@@ -45,6 +45,7 @@
     margin-top: 20px;
     border-radius: 12px;
     z-index: 100;
+
 }
 .card:hover {
     transform: scale(1.05);

@@ -1,12 +1,16 @@
 #skills_section{
-    height: 1000px;
+    height: 850px;
 }
 #skill-paragraph{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     position: relative;
-    margin: 25px;
+    /*margin: 25px;*/
     color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-bottom: 20px;
 }
 #java_id{
     position: absolute;

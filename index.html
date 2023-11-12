@@ -53,18 +53,6 @@
 </div>
 
 <!--navigation section-->
-<!--<section>-->
-<!--    <div class="container borderYtoX">-->
-<!--        <nav id="navigation_id">-->
-<!--            <a href="#about" class="navi_front">ABOUT</a>-->
-<!--            <a href="#gallery" class="navi_front">GALLERY</a>-->
-<!--            <a href="#skills" class="navi_front">SKILLS</a>-->
-<!--            <a href="#educations" class="navi_front">EDUCATIONS</a>-->
-<!--            <a href="#projects" class="navi_front">PROJECTS</a>-->
-<!--            <a href="#contacts" class="navi_front">CONTACTS</a>-->
-<!--        </nav>-->
-<!--    </div>-->
-<!--</section>-->
 <div class="container borderYtoX">
     <nav class="nav_headers">
         <input type="checkbox" id="check">
@@ -184,8 +172,18 @@
 
     <div class="image-container">
         <img src="assets/img/P.jpg" alt="" width="370" height="430" id="imgA">
-        <img src="assets/img/D.jpg" alt="" width="300" height="500" id="imgD">
-        <img src="assets/img/J.jpg" alt="" width="370" height="450" id="imgJ">
+        <div data-aos="fade-left"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+
+            <img src="assets/img/D.jpg" alt="" width="300" height="500" id="imgD">
+        </div>
+        <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+
+            <img src="assets/img/J.jpg" alt="" width="370" height="450" id="imgJ">
+        </div>
         <img src="assets/img/B.jpg" alt="" width="430" height="490" id="imgB">
         <img src="assets/img/C.jpg" alt="" width="450" height="350" id="imgC">
         <img src="assets/img/H.jpg" alt="" width="350" height="420" id="imgH">
@@ -533,7 +531,7 @@
                 </div>
                 <div class="slide">
                     <label class="project_label">Project 02</label>
-                    <a href="https://github.com/ParamiAshinsana/RestoMaster-Layered_Architecture">
+                    <a href="https://github.com/ParamiAshinsana/RestoMaster">
                         <img src="assets/img/Final-Project.jpg" alt="Image 2">
                     </a>
                 </div>
